@@ -1,0 +1,67 @@
+<!--
+  Generated template for the AddRem page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Add Reminder</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<ion-list>
+
+		<ion-item>
+			<ion-label stacked >Medicine Name</ion-label>
+			<ion-input type="text" [(ngModel)]="name"></ion-input>
+		</ion-item>
+
+		<ion-item>
+			<ion-label stacked >Description</ion-label>
+			<ion-input type="text" [(ngModel)]="description"></ion-input>
+		</ion-item>
+
+		<ion-item>
+			<ion-label stacked >Reminder Time</ion-label>
+			<ion-datetime displayFormat="hh:mm A" pickerFormat="hh mm A" (ionChange)="timeChange($event)" [(ngModel)]="time"></ion-datetime>
+		</ion-item>
+
+		<ion-list radio-group [(ngModel)]="frequency">
+  		<ion-list-header>
+		    Frequency
+		  </ion-list-header>
+
+		  <ion-item>
+		    <ion-label>Once</ion-label>
+		    <ion-radio checked="true" value="once"></ion-radio>
+		  </ion-item>
+
+		  <ion-item>
+		    <ion-label>Daily</ion-label>
+		    <ion-radio value="daily"></ion-radio>
+		  </ion-item>
+
+		  <ion-item>
+		    <ion-label>Weekly</ion-label>
+		    <ion-radio value="weekly"></ion-radio>
+		  </ion-item>
+		</ion-list>
+	</ion-list>
+
+	<button full ion-button color="primary" (click)="saveRem()">Save</button>
+
+	<ion-card color="light">
+		<ion-card-header>
+			Reminder Description
+		</ion-card-header>
+		<ion-card-content color="danger">
+			{{name}}<br />
+			{{description}}<br />
+			{{time}}
+			{{frequency}}
+		</ion-card-content>
+	</ion-card>
+</ion-content>
