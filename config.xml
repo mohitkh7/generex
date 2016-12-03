@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.ionicframework.medicapp532530" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>medicapp</name>
-  <description>An awesome Ionic/Cordova app.</description>
+<widget id="com.ionicframework.medicapp532530" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap  ="http://phonegap.com/ns/1.0" versionCode ="1">
+  <name>mediapp</name>
+  <description>An awe Ionic/Cordova app.</description>
   <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
   <content src="index.html"/>
   <access origin="*"/>
@@ -28,4 +28,5 @@
   <feature name="StatusBar">
     <param name="ios-package" onload="true" value="CDVStatusBar"/>
   </feature>
+  <plugin name="de.appplant.cordova.plugin.local-notification" />
 </widget>
