@@ -21749,6 +21749,19 @@ sub {
   }
 }
 
+.doctor-image {
+  width: 100% !important;
+  height: 100% !important;
+  /*control size */
+  max-width: 150px !important;
+  max-height: 150px !important;
+  /*control border */
+  border: 3.5px solid #999;
+  border-radius: 150px !important;
+  position: relative;
+  left: 20%;
+}
+
 page-home ion-icon {
   font-size: 60px;
   color: primary;

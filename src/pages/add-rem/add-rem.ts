@@ -43,6 +43,7 @@ export class AddRem {
 
   	/*Saving Reminder */
   	let notificationTime=new Date();
+    //Assigning time and checking whether today or tommorrow
   	if(this.userHours<notificationTime.getHours() || (notificationTime.getHours()==this.userHours && notificationTime.getMinutes()>=this.userMinutes))
   	{
   		notificationTime.setHours(this.userHours+24);

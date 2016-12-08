@@ -9,6 +9,9 @@ import { HomePage } from '../pages/home/home';
 import { AddRem } from '../pages/add-rem/add-rem';
 import { ViewReminder } from '../pages/view-reminder/view-reminder';
 import { CheckReminder } from '../pages/check-reminder/check-reminder';
+import { UpdateReminder } from '../pages/update-reminder/update-reminder';
+import { ViewDoctors } from '../pages/view-doctors/view-doctors';
+import { CheckDoctor } from '../pages/check-doctor/check-doctor';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { CheckReminder } from '../pages/check-reminder/check-reminder';
     HomePage,
     AddRem,
     ViewReminder,
-    CheckReminder
+    CheckReminder,
+    UpdateReminder,
+    ViewDoctors,
+    CheckDoctor
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -27,7 +33,10 @@ import { CheckReminder } from '../pages/check-reminder/check-reminder';
     HomePage,
     AddRem,
     ViewReminder,
-    CheckReminder
+    CheckReminder,
+    UpdateReminder,
+    ViewDoctors,
+    CheckDoctor
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler},Storage, Data]
 })

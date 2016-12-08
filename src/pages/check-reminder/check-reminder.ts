@@ -5,6 +5,7 @@ import { Data } from '../../providers/data';
 import { LocalNotifications } from 'ionic-native';
 
 import { HomePage } from '../home/home';
+import { UpdateReminder } from '../update-reminder/update-reminder';
 /*
   Generated class for the CheckReminder page.
 
@@ -77,5 +78,8 @@ export class CheckReminder {
 
   	});
   	alert.present();
+  }
+  update(){
+    this.navCtrl.push(UpdateReminder, {reminder :{id:this.id, name:this.name, description:this.description, time:this.time, frequency:this.frequency}});
   }
 }		      
