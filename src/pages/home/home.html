@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar color="primary">
     <ion-title>
-    	Medicapp
+    	V Care
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -13,5 +13,13 @@
 
   <br />
   <button ion-button full text-capitalize item-right icon-left large (click)="viewDoctors()"><ion-icon name="medkit"></ion-icon> Connect With Doctor</button>
+
+  <br />
+
+  <button ion-button full text-capitalize item-right icon-left large (click)="viewDiseases()"><ion-icon name="search"></ion-icon> View Diseases </button>
+
+  <ion-fab bottom right (tap)="tapEvent($event)"> <!--pressEvent($event)-->
+   <button ion-fab color="danger"><ion-icon name="nuclear"></ion-icon></button>
+  </ion-fab>
 </ion-content>
 	

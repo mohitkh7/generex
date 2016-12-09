@@ -1,0 +1,32 @@
+<!--
+  Generated template for the CheckDisease page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>{{ name }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+	<ion-list>
+	  <ion-list-header color="light">
+	    Symptom
+	  </ion-list-header>
+	  <ion-item *ngFor="let sym of symptom">{{sym}}</ion-item>
+
+	  <br />
+	  
+	  <ion-list-header color="light">
+	  	Precaution
+	  </ion-list-header>
+	  <ion-item *ngFor="let pre of precaution">{{pre}}</ion-item>
+	 
+	</ion-list>
+
+</ion-content>
