@@ -2,11 +2,15 @@ import { Component } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
 
+import { AlertController } from 'ionic-angular';
+
 import { AddRem } from '../add-rem/add-rem';
 
 import { ViewReminder } from '../view-reminder/view-reminder';
 
 import { ViewDoctors } from '../view-doctors/view-doctors';
+
+import { ViewDiseases } from '../view-diseases/view-diseases';
 
 @Component({
   selector: 'page-home',
@@ -15,8 +19,9 @@ import { ViewDoctors } from '../view-doctors/view-doctors';
 export class HomePage {
 
 	public reminder=[];
-  constructor(public navCtrl: NavController) {
-    
+  public tap=0; //count no. of taps
+  constructor(public navCtrl: NavController, public alertCtrl: AlertController) {
+    this.tap=0;  
   }
   addRem(){
   	this.navCtrl.push(AddRem);
@@ -30,4 +35,30 @@ export class HomePage {
     this.navCtrl.push(ViewDoctors);
   }
 
+  viewDiseases()
+  {
+    this.navCtrl.push(ViewDiseases);
+  }
+
+  //Panic Button Tap action
+  tapEvent(e)
+  {
+    this.tap++;
+    if(this.tap>=3)
+    {
+      this.showPanicAlert();
+      this.tap=0;
+    }
+  }
+
+  //Panic button alert
+  showPanicAlert()
+  {
+    let alert = this.alertCtrl.create({
+      title: 'Panic Alert',
+      subTitle: 'Panic Alert has been send to +919826123672, +917509429528 and nearest hospital',
+      buttons: ['Ok']
+    });
+    alert.present();
+  }
 }
