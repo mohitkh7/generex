@@ -12,6 +12,8 @@ import { CheckReminder } from '../pages/check-reminder/check-reminder';
 import { UpdateReminder } from '../pages/update-reminder/update-reminder';
 import { ViewDoctors } from '../pages/view-doctors/view-doctors';
 import { CheckDoctor } from '../pages/check-doctor/check-doctor';
+import { ViewDiseases } from '../pages/view-diseases/view-diseases';
+import { CheckDisease } from '../pages/check-disease/check-disease';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { CheckDoctor } from '../pages/check-doctor/check-doctor';
     CheckReminder,
     UpdateReminder,
     ViewDoctors,
-    CheckDoctor
+    CheckDoctor,
+    ViewDiseases,
+    CheckDisease
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -36,7 +40,9 @@ import { CheckDoctor } from '../pages/check-doctor/check-doctor';
     CheckReminder,
     UpdateReminder,
     ViewDoctors,
-    CheckDoctor
+    CheckDoctor,
+    ViewDiseases,
+    CheckDisease
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler},Storage, Data]
 })

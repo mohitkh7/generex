@@ -30,7 +30,7 @@ export class ViewDoctors {
 			{id:1,name:"Dr. Abhishek Verma", post:"Cardiologist", img: "man-2.png", phone:"9587462587", address: "Suyash Hospital"},
 			{id:2,name:"Dr. Anjali Chourey", post:" Dermatologist", img: "woman-2.png", phone:"8144562347", address: "Bombay Hospital"},
 			{id:3,name:"Dr. Chavvi Sharma", post:"Endocrinologist", img: "woman-1.png", phone:"778915973", address: "MY Hospital"},
-			{id:4,name:"Dr. Deepak Sharde", post:"Gynecologist", img: "man-1.png", phone:"7531592365", address: "MediCare Hospital"},
+			{id:4,name:"Dr. Deepak Sharde", post:"Gynecologist", img: "man.png", phone:"7531592365", address: "MediCare Hospital"},
 		];
   }
 
