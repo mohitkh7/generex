@@ -23,6 +23,11 @@ export class HomePage {
   constructor(public navCtrl: NavController, public alertCtrl: AlertController) {
     this.tap=0;  
   }
+
+  //this function will work whenver page come to view
+  ionViewWillEnter(){
+    this.tap=0;
+  }
   addRem(){
   	this.navCtrl.push(AddRem);
   }
@@ -56,9 +61,26 @@ export class HomePage {
   {
     let alert = this.alertCtrl.create({
       title: 'Panic Alert',
-      subTitle: 'Panic Alert has been send to +919826123672, +917509429528 and nearest hospital',
+      subTitle: 'Panic Alert has been send to +919826123672, +917509429528 and nearest hospital.',
       buttons: ['Ok']
     });
     alert.present();
   }
+
+  /*//send SMS
+  sendSMS(){
+    var options={
+          replaceLineBreaks: false, // true to replace \n by a new line, false by default
+          android: {
+               intent: 'INTENT'  // Opens Default sms app
+              //intent: '' // Sends sms without opening default sms app
+            }
+    }
+    SMS.send('+919826123672', 'Hello world!',options)
+      .then(()=>{
+        alert("success");
+      },()=>{
+      alert("failed");
+      });
+  }//sendSMS ends*/
 }
