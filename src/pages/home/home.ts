@@ -53,7 +53,7 @@ export class HomePage {
     this.tap++;
     if(this.tap>=3)
     {
-      this.showPanicAlert();
+      this.sendSMS();
       this.tap=0;
     }
   }
@@ -80,7 +80,7 @@ export class HomePage {
     alert.present();
   }
 
-  /*//send SMS
+  //send SMS
   sendSMS(){
     var options={
           replaceLineBreaks: false, // true to replace \n by a new line, false by default
@@ -91,9 +91,9 @@ export class HomePage {
     }
     SMS.send('+919826123672', 'Hello world!',options)
       .then(()=>{
-        this.showPaniAlert();
+        this.showPanicAlert();
       },()=>{
       this.showFailAlert();
       });
-  }//sendSMS ends*/
+  }//sendSMS ends
 }
