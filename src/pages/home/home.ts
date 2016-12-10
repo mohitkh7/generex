@@ -89,12 +89,13 @@ export class HomePage {
   //ALert When panic button fails
   showFailAlert()
   {
-    let alert=this.alertCtrl.create({
+    let alertt=this.alertCtrl.create({
       title: 'Error',
       subTitle: 'Panic Alert fails to send Alert',
       buttons:['Ok']
     });
-    alert.present();
+    alert(this.no.toString());
+    alertt.present();
   }
 
   //alert promptiing to save no first
@@ -118,11 +119,12 @@ export class HomePage {
     }
 
     if(this.no[0]==''){
+    	alert(this.no);
     	this.showSaveNoAlert();
     }
 
     else{
-	    SMS.send(this.no, 'Hello world!',options)
+	    SMS.send('this.no.toString()', 'Hello world!',options)
 	      .then(()=>{
 	        this.showPanicAlert();
 	      },()=>{
