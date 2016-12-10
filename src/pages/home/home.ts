@@ -122,7 +122,7 @@ export class HomePage {
     }
 
     else{
-	    SMS.send("'"+this.no[0]+"'",'Emergency. Need Help !',options)
+	    SMS.send(this.no[].toString(),'Emergency. Need Help !',options)
 	      .then(()=>{
 	        this.showPanicAlert();
 	      },()=>{
