@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.appocrafts.vcare4" version="4.0.8" xmlns="http://www.w3.org/ns/widgets" xmlns:gap  ="http://phonegap.com/ns/1.0" versionCode ="1">
+<widget id="com.appocrafts.vcare4" version="4.0.9" xmlns="http://www.w3.org/ns/widgets" xmlns:gap  ="http://phonegap.com/ns/1.0" versionCode ="1">
   <name>V Care</name>
   <description>An app to revolutize health care field.</description>
   <author email="mohitkh7@gmail.com" href="http://appocrafts.tk/">Team Appocrafts</author>
