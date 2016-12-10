@@ -30,18 +30,18 @@ export class HomePage {
 
   constructor(public navCtrl: NavController, public alertCtrl: AlertController, public dataService: Data) {
     this.tap=0;
-
-    //assigning list of no saved to var no
-  	this.dataService.getDataNo().then((nos)=>{
-  		if(nos){
-  			this.no=JSON.parse(nos);
-  		}
-  	});  
   }
 
   //this function will work whenver page come to view
   ionViewWillEnter(){
     this.tap=0;
+    //assigning list of no saved to var no
+  	this.dataService.getDataNo().then((nos)=>{
+  		if(nos){
+  			this.no=JSON.parse(nos);
+  		}
+  	});
+
   }
   addRem(){
   	this.navCtrl.push(AddRem);
@@ -89,13 +89,12 @@ export class HomePage {
   //ALert When panic button fails
   showFailAlert()
   {
-    let alertt=this.alertCtrl.create({
+    let alert=this.alertCtrl.create({
       title: 'Error',
       subTitle: 'Panic Alert fails to send Alert',
       buttons:['Ok']
     });
-    alert(this.no.toString());
-    alertt.present();
+    alert.present();
   }
 
   //alert promptiing to save no first
@@ -119,12 +118,11 @@ export class HomePage {
     }
 
     if(this.no[0]==''){
-    	alert(this.no);
     	this.showSaveNoAlert();
     }
 
     else{
-	    SMS.send('this.no.toString()', 'Hello world!',options)
+	    SMS.send("'"+this.no.toString()+"'", 'Emergency. Need Help !',options)
 	      .then(()=>{
 	        this.showPanicAlert();
 	      },()=>{
