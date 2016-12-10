@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.appocrafts.vcare3" version="3.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap  ="http://phonegap.com/ns/1.0" versionCode ="1">
+<widget id="com.appocrafts.vcare4" version="4.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap  ="http://phonegap.com/ns/1.0" versionCode ="1">
   <name>V Care</name>
   <description>An app to revolutize health care field.</description>
   <author email="mohitkh7@gmail.com" href="http://appocrafts.tk/">Team Appocrafts</author>
@@ -74,4 +74,5 @@
   </feature>
   <plugin name="de.appplant.cordova.plugin.local-notification" />
   <plugin name="cordova-plugin-statusbar" spec="~2.2.0" />
+  <plugin name="com.cordova.plugins.sms" />
 </widget>

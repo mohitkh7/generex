@@ -4,6 +4,8 @@ import { NavController } from 'ionic-angular';
 
 import { AlertController } from 'ionic-angular';
 
+import { SMS } from 'ionic-native';
+
 import { AddRem } from '../add-rem/add-rem';
 
 import { ViewReminder } from '../view-reminder/view-reminder';
@@ -67,6 +69,17 @@ export class HomePage {
     alert.present();
   }
 
+  //ALert When panic button fails
+  showFailAlert()
+  {
+    let alert=this.alertCtrl.create({
+      title: 'Error',
+      subTitle: 'Panic Alert fails to send alert',
+      buttons:['Ok']
+    });
+    alert.present();
+  }
+
   /*//send SMS
   sendSMS(){
     var options={
@@ -78,9 +91,9 @@ export class HomePage {
     }
     SMS.send('+919826123672', 'Hello world!',options)
       .then(()=>{
-        alert("success");
+        this.showPaniAlert();
       },()=>{
-      alert("failed");
+      this.showFailAlert();
       });
   }//sendSMS ends*/
 }
