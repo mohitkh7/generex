@@ -112,8 +112,8 @@ export class HomePage {
     var options={
           replaceLineBreaks: false, // true to replace \n by a new line, false by default
           android: {
-            //intent: 'INTENT'  // Opens Default sms app
-            intent: '' // Sends sms without opening default sms app
+            intent: 'INTENT'  // Opens Default sms app
+            //intent: '' // Sends sms without opening default sms app
           }
     }
 
@@ -122,7 +122,7 @@ export class HomePage {
     }
 
     else{
-	    SMS.send('+919826123672,+917509429528','Emergency. Need Help !',options)
+	    SMS.send('+919826123672','Emergency. Need Help !',options)
 	      .then(()=>{
 	        this.showPanicAlert();
 	      },()=>{
