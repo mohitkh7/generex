@@ -28,8 +28,13 @@ export class ViewDiseases {
   //this will intialize list of diseases
   initialize(){
   	this.disease_list=[
-  		{id:1,name:"Fever",symptom:["Headache","Heat"],precaution:["rest","vomit"]},
-  		{id:2,name:"Pain",symptom:["Headache","Heat"],precaution:["rest","vomit"]}
+  		{id:1,name:"Malaria",symptom:["Chills","Fatigue","nausea","vomiting"],precaution:["use mosquito repellents"]},
+  		{id:2,name:"Dengue",symptom:["skin rashes","muscular pain","nausea"],precaution:["Personal Protection","cleanliness management"]},
+      {id:3,name:"Typhoid",symptom:["Loss of apetite","headache","weight loss"],precaution:["drink purified water","avoid junk food"]},
+      {id:4,name:"jaundice",symptom:["Fatigue","Fever","weight loss"],precaution:["avoid contaminated food"]},
+      {id:5,name:"chickenpox",symptom:["Fatigue","HighFever"],precaution:["Vaccination","avoid contact with infected person"]},
+      {id:6,name:"Diarrhoea",symptom:["abdominal pain","abdominal cramps","nausea"],precaution:["avoid contaminated food"]}
+
   	];
   }
 

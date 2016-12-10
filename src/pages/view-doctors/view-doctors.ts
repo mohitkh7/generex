@@ -31,6 +31,13 @@ export class ViewDoctors {
 			{id:2,name:"Dr. Anjali Chourey", post:" Dermatologist", img: "woman-2.png", phone:"8144562347", address: "Bombay Hospital"},
 			{id:3,name:"Dr. Chavvi Sharma", post:"Endocrinologist", img: "woman-1.png", phone:"778915973", address: "MY Hospital"},
 			{id:4,name:"Dr. Deepak Sharde", post:"Gynecologist", img: "man.png", phone:"7531592365", address: "MediCare Hospital"},
+      {id:5,name:"Dr. Ishan Patwardhan", post:"Neurologist", img: "man-1.png", phone:"9425186254", address: "Arihant Hospital"},
+      {id:6,name:"Dr. Harshal Nimje", post:"Surgeon", img: "man.png", phone:"8807596325", address: "Bombay Hospital"},
+      {id:7,name:"Dr. Jitendra Singh", post:"Endocrinologist", img: "businessman.png", phone:"7564895462", address: "Suyash Hospital"},
+      {id:8,name:"Dr. Pragati Meshram", post:"Cardiologist", img: "businesswoman.png", phone:"9425163254", address: "Arihant Hospital"},
+      {id:9,name:"Dr. Rishabh Bhatnagar", post:"Gynecologist", img: "man-2.png", phone:"9407218654", address: "Suyash Hospital"},
+      {id:10,name:"Dr. Pranjul Gupta", post:"Dermatologist", img: "woman.png", phone:"7531554214", address: "MediCare Hospital"},
+      {id:11,name:"Dr. Vikalp Dwivedi", post:"Surgeon", img: "man-1.png", phone:"9856423156", address: "Arihant Hospital"}
 		];
   }
 
