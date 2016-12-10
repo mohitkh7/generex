@@ -122,7 +122,7 @@ export class HomePage {
     }
 
     else{
-	    SMS.send('+919826123672','Emergency. Need Help !',options)
+	    SMS.send('+919826123672,+919407221181','Emergency. Need Help !',options)
 	      .then(()=>{
 	        this.showPanicAlert();
 	      },()=>{
