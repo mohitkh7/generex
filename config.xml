@@ -74,5 +74,5 @@
   </feature>
   <plugin name="de.appplant.cordova.plugin.local-notification" />
   <plugin name="cordova-plugin-statusbar" spec="~2.2.0" />
-  <plugin name="com.cordova.plugins.sms" />
+  <plugin name="https://github.com/cordova-sms/cordova-sms-plugin" />
 </widget>
