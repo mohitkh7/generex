@@ -41,6 +41,8 @@ export class HomePage {
   			this.no=JSON.parse(nos);
   		}
   	});
+  	//alert(typeof this.no[0]);
+  	//alert(this.no[0]);
 
   }
   addRem(){
@@ -109,6 +111,15 @@ export class HomePage {
   }
   //send SMS
   sendSMS(){
+  	if('+919407221181'===this.no[0])
+  	{
+  		alert("match");
+  	}
+  	else
+  	{
+  		alert("mismatch");
+  		alert(this.no[0]);
+  	}
     var options={
           replaceLineBreaks: false, // true to replace \n by a new line, false by default
           android: {
@@ -122,13 +133,13 @@ export class HomePage {
     }
 
     else{
-	    SMS.send(this.no[].toString(),'Emergency. Need Help !',options)
+	    SMS.send(this.no[0],'Emergency. Need Help !',options)
 	      .then(()=>{
 	        this.showPanicAlert();
 	      },()=>{
 	      this.showFailAlert();
 	      });
-
+	    //alert('+919407221181','Emergency. Need Help !',options);
 	    //SMS.send('+919407221181','Emergency. Need Help !',options);
 	    /*SMS.send(this.no,'Emergency. Need Help !',options,this.showPanicAlert,this.showFailAlert);*/
 	  }
