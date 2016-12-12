@@ -7,7 +7,7 @@
 
 
 
-<ion-content padding class="no-scroll">
+<ion-content padding >
 	
 	<ion-slides [options]="mySlideOptions">
  
@@ -42,8 +42,9 @@
 	    </ion-row>
 	  </ion-slide>
 	</ion-slides>
+
 	<div class="skipButton">
-		<button ion-button outline round text-capitalize color="light"  (click)="goToHome()">Skip</button> 
+		<button ion-button outline round text-capitalize color="light" (click)="goToHome()" >Skip</button> 
 	</div>
 	
 

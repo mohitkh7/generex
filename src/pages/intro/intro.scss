@@ -12,15 +12,15 @@ page-intro {
     width: auto !important;
 	}
 
+	ion-slides{
+		height:90%;
+	}
 	.goButton{
 		margin-top:40px !important;
 	}
 
 	.skipButton{
 		text-align:right !important;
-		position:absolute;
-		right:15px;
-		top:15px;
 	}
 }
 

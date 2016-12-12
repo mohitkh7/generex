@@ -21759,8 +21759,12 @@ sub {
   }
 }
 
-.no-scroll .scroll-content {
-  overflow: hidden;
+.scroll-bar-indicator {
+  display: none;
+}
+
+scroll-content {
+  overflow-y: auto;
 }
 
 .bg {
@@ -21848,13 +21852,14 @@ page-intro ion-slide img {
   width: auto !important;
 }
 
+page-intro ion-slides {
+  height: 90%;
+}
+
 page-intro .goButton {
   margin-top: 40px !important;
 }
 
 page-intro .skipButton {
   text-align: right !important;
-  position: absolute;
-  right: 15px;
-  top: 15px;
 }
