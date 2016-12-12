@@ -111,7 +111,6 @@ export class HomePage {
   }
   //send SMS
   sendSMS(){
-    alert(this.no[1]);
     var options={
           replaceLineBreaks: false, // true to replace \n by a new line, false by default
           android: {

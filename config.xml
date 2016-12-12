@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.appocrafts.vcare4" version="5.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" versionCode="1">
+<widget id="com.appocrafts.vcare4" version="5.0.4" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" versionCode="1">
   <name>V Care</name>
   <description>An app to revolutize health care field.</description>
   <author email="mohitkh7@gmail.com" href="http://appocrafts.tk/">Team Appocrafts</author>
@@ -67,7 +67,13 @@
     <splash src="resources/ios/splash/Default~iphone.png" width="320" height="480"/>
   </platform>
   <preference name="webviewbounce" value="false"/>
+
   <icon src="resources/android/icon/drawable-xhdpi-icon.png" />
+  <gap:splash gap:density="ldpi" gap:platform="android" src="resources/splash.png" />
+  <gap:splash gap:density="mdpi" gap:platform="android" src="resources/splash.png" />
+  <gap:splash gap:density="hdpi" gap:platform="android" src="resources/splash.png" />
+  <gap:splash gap:density="xhdpi" gap:platform="android" src="resources/splash.png" />
+
   <preference name="UIWebViewBounce" value="false"/>
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="android-minSdkVersion" value="16"/>
@@ -76,7 +82,7 @@
   <preference name="FadeSplashScreenDuration" value="300"/>
   <preference name="SplashScreen" value="screen"/>
   <preference name="SplashScreenDelay" value="3000"/>
-  <preference name="StatusBarBackgroundColor" value="#3577e0" />
+  <preference name="StatusBarBackgroundColor" value="#9de1fe" />
   <feature name="StatusBar">
     <param name="ios-package" onload="true" value="CDVStatusBar"/>
   </feature>
