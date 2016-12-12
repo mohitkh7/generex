@@ -111,15 +111,6 @@ export class HomePage {
   }
   //send SMS
   sendSMS(){
-  	if('+919407221181'===this.no[0])
-  	{
-  		alert("match");
-  	}
-  	else
-  	{
-  		alert("mismatch");
-  		alert(this.no[0]);
-  	}
     var options={
           replaceLineBreaks: false, // true to replace \n by a new line, false by default
           android: {
