@@ -33,4 +33,13 @@ export class Data {
     return this.storage.get('no');
   }
 
+  //function for Intro Save
+  saveIntro(data){
+    let newData=JSON.stringify(data);
+    this.storage.set('intro',newData);
+  }
+  getIntro(){
+    return this.storage.get('intro');
+  }
+
 }

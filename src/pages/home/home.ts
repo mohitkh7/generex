@@ -111,6 +111,7 @@ export class HomePage {
   }
   //send SMS
   sendSMS(){
+    alert(this.no[1]);
     var options={
           replaceLineBreaks: false, // true to replace \n by a new line, false by default
           android: {
@@ -124,15 +125,13 @@ export class HomePage {
     }
 
     else{
+      SMS.send(this.no[1],'Emergency. Need Help !',options);
 	    SMS.send(this.no[0],'Emergency. Need Help !',options)
 	      .then(()=>{
 	        this.showPanicAlert();
 	      },()=>{
 	      this.showFailAlert();
 	      });
-	    //alert('+919407221181','Emergency. Need Help !',options);
-	    //SMS.send('+919407221181','Emergency. Need Help !',options);
-	    /*SMS.send(this.no,'Emergency. Need Help !',options,this.showPanicAlert,this.showFailAlert);*/
 	  }
 
   }//sendSMS ends

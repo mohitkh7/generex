@@ -1,0 +1,23 @@
+page-aboutus {
+
+}
+.bg{
+	background-image:url("img/background.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.content{
+	position:fixed;
+	top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  color:#f4f6f9;
+  font-size:14px;
+  text-align:center;
+}
+.app-title{
+	color:#ffffff;
+	font-size:40px;
+	font-style:bold;
+}

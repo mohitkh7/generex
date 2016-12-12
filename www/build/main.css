@@ -21749,6 +21749,34 @@ sub {
   }
 }
 
+button {
+  border-radius: 15px;
+}
+
+.bg {
+  background-image: url("img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #f4f6f9;
+  font-size: 14px;
+  text-align: center;
+}
+
+.app-title {
+  color: #ffffff;
+  font-size: 40px;
+  font-style: bold;
+}
+
 .doctor-image {
   width: 100% !important;
   height: 100% !important;
@@ -21765,4 +21793,19 @@ sub {
 page-home ion-icon {
   font-size: 60px;
   color: primary;
+}
+
+page-intro ion-content {
+  background-image: url("img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+page-intro ion-slide img {
+  height: 128px !important;
+  width: auto !important;
+}
+
+page-intro button {
+  margin-top: 40px !important;
 }
