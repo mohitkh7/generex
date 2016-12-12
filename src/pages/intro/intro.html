@@ -7,8 +7,9 @@
 
 
 
-<ion-content padding>
-	<ion-slides pager>
+<ion-content padding class="no-scroll">
+	
+	<ion-slides [options]="mySlideOptions">
  
 	  <ion-slide>
 	    <img src="build/img_intro/alarm.png" />
@@ -36,10 +37,14 @@
 		    
 	    <ion-row>
 	        <ion-col>
-	            <button ion-button text-capitalize round color="secondary" (click)="goToHome()">go to home</button>
+	            <button ion-button outline text-capitalize round color="light" class="goButton" (click)="goToHome()">go to home</button>
 	        </ion-col>
 	    </ion-row>
 	  </ion-slide>
- 
-</ion-slides>
+	</ion-slides>
+	<div class="skipButton">
+		<button ion-button outline round text-capitalize color="light"  (click)="goToHome()">Skip</button> 
+	</div>
+	
+
 </ion-content>

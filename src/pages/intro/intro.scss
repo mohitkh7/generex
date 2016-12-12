@@ -12,8 +12,15 @@ page-intro {
     width: auto !important;
 	}
 
-	button{
+	.goButton{
 		margin-top:40px !important;
+	}
+
+	.skipButton{
+		text-align:right !important;
+		position:absolute;
+		right:15px;
+		top:15px;
 	}
 }
 

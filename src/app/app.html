@@ -1,25 +1,25 @@
-<ion-menu [content]="content">
+<ion-menu [content]="content" type="reveal">
   <ion-header >
     <ion-toolbar color="primary">
-      <button ion-button menuToggle end>
+      <button ion-button menuToggle start>
         <ion-icon name="close"></ion-icon>
       </button>
-      <ion-title>Menu</ion-title>
+      <ion-title> Menu</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <ion-content>
+  <ion-content class="no-scroll">
     <ion-list>
     	<ion-item>
     		<img src="build/img/logo.jpeg" />
     	</ion-item>
 
-      <ion-item (click)="OpenHome()">
+      <ion-item (click)="OpenHome()" >
         <ion-icon name="home" item-left></ion-icon>
         Home
       </ion-item>
 
-      <ion-item (click)="OpenViewDoctors()">
+      <ion-item (click)="OpenViewDoctors()" >
         <ion-icon name="medkit" item-left></ion-icon>
         Connect with Doctors
       </ion-item>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.appocrafts.vcare4" version="5.0.4" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" versionCode="1">
+<widget id="com.appocrafts.vcare4" version="5.0.5" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" versionCode="1">
   <name>V Care</name>
   <description>An app to revolutize health care field.</description>
   <author email="mohitkh7@gmail.com" href="http://appocrafts.tk/">Team Appocrafts</author>
@@ -81,8 +81,9 @@
   <preference name="SplashMaintainAspectRatio" value="true"/>
   <preference name="FadeSplashScreenDuration" value="300"/>
   <preference name="SplashScreen" value="screen"/>
-  <preference name="SplashScreenDelay" value="3000"/>
-  <preference name="StatusBarBackgroundColor" value="#9de1fe" />
+  <preference name="SplashScreenDelay" value="9000"/>
+  <preference name="ShowSplashScreenSpinner" value="false"/>
+  <preference name="StatusBarBackgroundColor" value="#0261f9" />
   <feature name="StatusBar">
     <param name="ios-package" onload="true" value="CDVStatusBar"/>
   </feature>

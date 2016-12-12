@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { Slides } from 'ionic-angular';
 
 import { HomePage } from '../home/home';
 
@@ -14,6 +15,11 @@ import { HomePage } from '../home/home';
   templateUrl: 'intro.html'
 })
 export class Intro {
+
+  mySlideOptions = {
+    initialSlide: 0,
+    pager:true
+  };
 
   constructor(public navCtrl: NavController) {}
 
