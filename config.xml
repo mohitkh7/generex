@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.appocrafts.vcare7" version="7.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" versionCode="1">
+<widget id="com.appocrafts.vcare8" version="8.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" versionCode="1">
   <name>V Care</name>
   <description>An app to revolutize health care field.</description>
   <author email="mohitkh7@gmail.com" href="http://appocrafts.tk/">Team Appocrafts</author>
@@ -110,4 +110,8 @@
   <plugin name="cordova-plugin-statusbar" spec="~2.2.0"/>
   <plugin name="https://github.com/cordova-sms/cordova-sms-plugin"/>
   <plugin name="cordova-plugin-splashscreen" />
+
+  <!-- heavy version API-->
+  <plugin name="org.crosswalk.engine" />
+  <!-- -->
 </widget>
