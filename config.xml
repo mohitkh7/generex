@@ -84,6 +84,7 @@
   <preference name="SplashScreenDelay" value="9000"/>
   <preference name="ShowSplashScreenSpinner" value="false"/>
   <preference name="StatusBarBackgroundColor" value="#0261f9" />
+  <preference name="CrosswalkAnimatable" value="true" />
   <feature name="StatusBar">
     <param name="ios-package" onload="true" value="CDVStatusBar"/>
   </feature>
@@ -91,4 +92,5 @@
   <plugin name="cordova-plugin-statusbar" spec="~2.2.0"/>
   <plugin name="https://github.com/cordova-sms/cordova-sms-plugin"/>
   <plugin name="cordova-plugin-splashscreen" />
+  <plugin name="org.crosswalk.engine" />
 </widget>

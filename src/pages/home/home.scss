@@ -8,7 +8,7 @@ page-home {
 		font-size:20px;
 		padding-top:25px;
 		padding-bottom:25px;
-		border-radius:5px;
+		//border-radius:5px; //changed
 		color:#ffffff;
 
 	}
@@ -35,6 +35,15 @@ page-home {
 
 	.bg6{
 		background: #0576bc !important;
+	}
+
+	//third case
+	ion-card{
+		margin:0px!important;
+		width:100% !important;
+	}
+	ion-col{
+		padding:0px!important;
 	}
 
 }
