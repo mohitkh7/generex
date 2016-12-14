@@ -10938,6 +10938,16 @@ ion-item-group .item-wrapper:last-child .item-ios .item-inner {
   border-bottom: 1px solid #dedede;
 }
 
+.item-md[detail-push] .item-inner,
+button.item-md:not([detail-none]) .item-inner,
+a.item-md:not([detail-none]) .item-inner {
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2012%2020'><path%20d='M2,20l-2-2l8-8L0,2l2-2l10,10L2,20z'%20fill='%23dedede'/></svg>");
+  padding-right: 32px;
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 14px 14px;
+}
+
 .item-md [item-left],
 .item-md [item-right] {
   margin: 9px 8px 9px 0;
@@ -21749,6 +21759,38 @@ sub {
   }
 }
 
+.scroll-bar-indicator {
+  display: none;
+}
+
+scroll-content {
+  overflow-y: auto;
+}
+
+.bg {
+  background-image: url("img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #f4f6f9;
+  font-size: 14px;
+  text-align: center;
+}
+
+.app-title {
+  color: #ffffff;
+  font-size: 40px;
+  font-style: bold;
+}
+
 .doctor-image {
   width: 100% !important;
   height: 100% !important;
@@ -21765,4 +21807,59 @@ sub {
 page-home ion-icon {
   font-size: 60px;
   color: primary;
+}
+
+page-home .blue {
+  font-size: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+page-home .bg1 {
+  background: #67d2e4 !important;
+}
+
+page-home .bg2 {
+  background: #42c6dd !important;
+}
+
+page-home .bg3 {
+  background: #43afdd !important;
+}
+
+page-home .bg4 {
+  background: #339cde !important;
+}
+
+page-home .bg5 {
+  background: #218cd0 !important;
+}
+
+page-home .bg6 {
+  background: #0576bc !important;
+}
+
+page-intro ion-content {
+  background-image: url("img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+page-intro ion-slide img {
+  height: 128px !important;
+  width: auto !important;
+}
+
+page-intro ion-slides {
+  height: 90%;
+}
+
+page-intro .goButton {
+  margin-top: 40px !important;
+}
+
+page-intro .skipButton {
+  text-align: right !important;
 }

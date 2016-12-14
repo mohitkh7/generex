@@ -1,0 +1,28 @@
+page-intro {
+
+	ion-content {
+    background-image:url("img/background.jpg");
+		background-repeat:no-repeat;
+		background-size:cover;
+
+	}
+
+	ion-slide img {
+    height: 128px !important;
+    width: auto !important;
+	}
+
+	ion-slides{
+		height:90%;
+	}
+	.goButton{
+		margin-top:40px !important;
+	}
+
+	.skipButton{
+		text-align:right !important;
+	}
+}
+
+ 
+

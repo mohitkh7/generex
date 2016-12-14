@@ -1,1 +1,53 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="content" type="reveal" persistent="true">
+  <ion-header >
+    <ion-toolbar color="primary">
+      <button ion-button menuToggle start>
+        <ion-icon name="close"></ion-icon>
+      </button>
+      <ion-title> Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+    	<ion-item>
+    		<img src="build/img/logo.jpeg" />
+    	</ion-item>
+
+      <ion-item (click)="OpenHome()" >
+        <ion-icon name="home" item-left></ion-icon>
+        Home
+      </ion-item>
+
+      <ion-item (click)="OpenViewDoctors()" >
+        <ion-icon name="medkit" item-left></ion-icon>
+        Connect with Doctors
+      </ion-item>
+
+      <ion-item (click)="OpenViewDiseases()">
+        <ion-icon name="search" item-left></ion-icon>
+        View Diseases
+      </ion-item>
+
+      <ion-item (click)="OpenSetting()">
+        <ion-icon name="settings" item-left></ion-icon>
+        Settings
+      </ion-item>
+
+      <ion-item (click)="OpenAboutus()">
+        <ion-icon name="information-circle" item-left></ion-icon>
+        About Us
+      </ion-item>
+
+      <ion-item (click)="OpenIntro()">
+        <ion-icon name="bulb" item-left></ion-icon>
+        Introduction
+      </ion-item>
+
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

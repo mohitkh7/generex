@@ -1,25 +1,91 @@
 <ion-header>
   <ion-navbar color="primary">
+
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
     <ion-title>
     	V Care
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <button ion-button full text-capitalize item-right icon-left large (click)="addRem()"><ion-icon name="alarm"></ion-icon> Set New Reminder</button>
+<ion-content  padding persistent="true">
+  <button ion-button full round text-capitalize item-right icon-left large (click)="addRem()"><ion-icon name="alarm"></ion-icon> Set New Reminder</button>
   <br />
-  <button ion-button full text-capitalize item-right icon-left large (click)="viewRem()"><ion-icon name="eye"></ion-icon> View Reminder</button>
-
-  <br />
-  <button ion-button full text-capitalize item-right icon-left large (click)="viewDoctors()"><ion-icon name="medkit"></ion-icon> Connect With Doctor</button>
+  <button ion-button full round text-capitalize item-right icon-left large (click)="viewRem()"><ion-icon name="eye"></ion-icon> View Reminder</button>
 
   <br />
+  <button ion-button full round text-capitalize item-right icon-left large (click)="viewDoctors()"><ion-icon name="medkit"></ion-icon> Connect With Doctor</button>
 
-  <button ion-button full text-capitalize item-right icon-left large (click)="viewDiseases()"><ion-icon name="search"></ion-icon> View Diseases </button>
+  <br />
 
+  <button ion-button full round text-capitalize item-right icon-left large (click)="viewDiseases()"><ion-icon name="search"></ion-icon> View Diseases </button>
+
+  <br />
+
+  <button ion-button full round text-capitalize item-right icon-left large (click)="viewSetting()"><ion-icon name="settings"></ion-icon> Settings </button>
+  <!--
+  <ion-row>
+    <ion-col width-50>
+      <ion-card class="blue bg1" (click)="addRem()">
+        <ion-icon name="alarm"></ion-icon>
+        <br />
+        Set Reminder
+      </ion-card>
+    </ion-col>
+
+    <ion-col width-50>
+      <ion-card class="blue bg2" >
+        <ion-icon name="eye"></ion-icon>
+        <br />
+        View Reminder
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <ion-card class="blue bg3" >
+        <ion-icon name="medkit"></ion-icon>
+        <br />
+        View Doctor
+      </ion-card>
+    </ion-col>
+
+    <ion-col>
+      <ion-card class="blue bg4" >
+        <ion-icon name="search"></ion-icon>
+        <br />
+        Informatics
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <ion-card class="blue bg5" >
+        <ion-icon name="settings"></ion-icon>
+        <br />
+        Settings
+      </ion-card>
+    </ion-col>
+
+    <ion-col>
+      <ion-card class="blue bg6" >
+        <ion-icon name="information-circle"></ion-icon>
+        <br />
+        Information
+      </ion-card>
+    </ion-col>
+  </ion-row>
+	-->
   <ion-fab bottom right (tap)="tapEvent($event)"> <!--pressEvent($event)-->
-   <button ion-fab color="danger"><ion-icon name="nuclear"></ion-icon></button>
+   <button ion-fab color="danger" ><ion-icon name="nuclear"></ion-icon></button>
   </ion-fab>
 </ion-content>
+
+<ion-scroll scrollY="false">
+</ion-scroll>
 	

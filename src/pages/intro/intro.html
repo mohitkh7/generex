@@ -1,0 +1,51 @@
+<!--
+  Generated template for the Intro page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+
+<ion-content padding >
+	
+	<ion-slides [options]="mySlideOptions">
+ 
+	  <ion-slide>
+	    <img src="build/img_intro/alarm.png" />
+	    <h1>Medicine Reminder</h1>
+	    <h6>Reminds you to take medicine.</h6>
+	  </ion-slide>
+	 
+	  <ion-slide>
+	    <img src="build/img_intro/doctor.png" />
+	    <h1>Connect With Doctor</h1>
+	    <h6>V Care let you connect with doctors around you.</h6>
+	  </ion-slide>
+	 
+	  <ion-slide>
+	    <img src="build/img_intro/pill.png" />
+	    <h1>View Diseases</h1>
+	    <h6>Know the symptoms and precautions of common diseases.</h6>
+	  </ion-slide>
+	 
+	  <ion-slide>
+	    
+      <img src="build/img_intro/nuclear.png" />
+	    <h1>Panic Button</h1>
+	    <h6>Tap Panic Button Thrice to send message to emergency contacts.</h6>
+		    
+	    <ion-row>
+	        <ion-col>
+	            <button ion-button outline text-capitalize round color="light" class="goButton" (click)="goToHome()">go to home</button>
+	        </ion-col>
+	    </ion-row>
+	  </ion-slide>
+	</ion-slides>
+
+	<div class="skipButton">
+		<button ion-button outline round text-capitalize color="light" (click)="goToHome()" >Skip</button> 
+	</div>
+	
+
+</ion-content>

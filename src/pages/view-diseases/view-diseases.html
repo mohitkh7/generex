@@ -13,10 +13,10 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content >
 	<ion-searchbar (ionInput)="getDisease($event)"></ion-searchbar>
 	<ion-list>
-		<ion-item *ngFor="let disease of disease_list" (click)="checkDisease(disease)">
+		<ion-item *ngFor="let disease of disease_list" (click)="checkDisease(disease)" detail-push>
 			{{disease.name}}
 		</ion-item>
 	</ion-list>

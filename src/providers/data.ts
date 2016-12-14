@@ -23,4 +23,23 @@ export class Data {
   	this.storage.set('reminder',newData);
   }
 
+  //functions for Emergency No save
+  saveNo(data){
+    let newData=JSON.stringify(data);
+    this.storage.set('no',newData);
+  }
+  getDataNo()
+  {
+    return this.storage.get('no');
+  }
+
+  //function for Intro Save
+  saveIntro(data){
+    let newData=JSON.stringify(data);
+    this.storage.set('intro',newData);
+  }
+  getIntro(){
+    return this.storage.get('intro');
+  }
+
 }

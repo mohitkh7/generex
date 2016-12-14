@@ -14,6 +14,9 @@ import { ViewDoctors } from '../pages/view-doctors/view-doctors';
 import { CheckDoctor } from '../pages/check-doctor/check-doctor';
 import { ViewDiseases } from '../pages/view-diseases/view-diseases';
 import { CheckDisease } from '../pages/check-disease/check-disease';
+import { Setting } from '../pages/setting/setting';
+import { Aboutus } from '../pages/aboutus/aboutus';
+import { Intro } from '../pages/intro/intro';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { CheckDisease } from '../pages/check-disease/check-disease';
     ViewDoctors,
     CheckDoctor,
     ViewDiseases,
-    CheckDisease
+    CheckDisease,
+    Setting,
+    Aboutus,
+    Intro
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -42,7 +48,10 @@ import { CheckDisease } from '../pages/check-disease/check-disease';
     ViewDoctors,
     CheckDoctor,
     ViewDiseases,
-    CheckDisease
+    CheckDisease,
+    Setting,
+    Aboutus,
+    Intro
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler},Storage, Data]
 })
