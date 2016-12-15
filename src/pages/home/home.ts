@@ -18,6 +18,8 @@ import { ViewDiseases } from '../view-diseases/view-diseases';
 
 import { Setting } from '../setting/setting';
 
+import { Intro } from '../intro/intro';
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -66,6 +68,12 @@ export class HomePage {
   {
     this.navCtrl.push(Setting);
   }
+
+  viewIntro()
+  {
+    this.navCtrl.push(Intro);
+  }
+
   //Panic Button Tap action
   tapEvent(e)
   {

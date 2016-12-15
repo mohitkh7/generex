@@ -14,7 +14,7 @@
 
 
 <ion-content >
-	<ion-searchbar (ionInput)="getDoctors($event)"></ion-searchbar>
+	<ion-searchbar placeholder="Search by name or proffesion" (ionInput)="getDoctors($event)"></ion-searchbar>
 	<ion-list>
 		<ion-item *ngFor = " let doctor of doctor_list " (click)=" checkDoctors(doctor) ">
 			<ion-avatar item-left>

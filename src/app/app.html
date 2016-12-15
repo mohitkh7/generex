@@ -14,19 +14,9 @@
     		<img src="build/img/logo.jpeg" />
     	</ion-item>
 
-      <button ion-item (click)="OpenHome()" >
+      <ion-item tappable (click)="OpenHome()" >
         <ion-icon name="home" color="primary" item-left></ion-icon>
         Home
-      </button>
-
-      <ion-item tappable (click)="OpenViewDoctors()" >
-        <ion-icon name="medkit" color="primary" item-left></ion-icon>
-        Connect with Doctors
-      </ion-item>
-
-      <ion-item tappable (click)="OpenViewDiseases()">
-        <ion-icon name="search" color="primary" item-left></ion-icon>
-        View Diseases
       </ion-item>
 
       <ion-item tappable (click)="OpenSetting()">

@@ -13,7 +13,7 @@ import { NavController } from 'ionic-angular';
 })
 export class Aboutus {
 
-	public version="5.0.1";
+	public version="1.0.1";
   constructor(public navCtrl: NavController) {}
 
   ionViewDidLoad() {

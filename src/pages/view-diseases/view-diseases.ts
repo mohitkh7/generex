@@ -28,12 +28,17 @@ export class ViewDiseases {
   //this will intialize list of diseases
   initialize(){
   	this.disease_list=[
-  		{id:1,name:"Malaria",symptom:["Chills","Fatigue","nausea","vomiting"],precaution:["use mosquito repellents"]},
-  		{id:2,name:"Dengue",symptom:["skin rashes","muscular pain","nausea"],precaution:["Personal Protection","cleanliness management"]},
-      {id:3,name:"Typhoid",symptom:["Loss of apetite","headache","weight loss"],precaution:["drink purified water","avoid junk food"]},
-      {id:4,name:"jaundice",symptom:["Fatigue","Fever","weight loss"],precaution:["avoid contaminated food"]},
-      {id:5,name:"chickenpox",symptom:["Fatigue","HighFever"],precaution:["Vaccination","avoid contact with infected person"]},
-      {id:6,name:"Diarrhoea",symptom:["abdominal pain","abdominal cramps","nausea"],precaution:["avoid contaminated food"]}
+  		{id:1,name:"Malaria",symptom:["Chills","Fatigue","Nausea","Vomiting"],precaution:["Use mosquito repellents"]},
+      {id:2,name:"Dengue",symptom:["Skin rashes","Muscular pain","Nausea"],precaution:["Personal Protection","Cleanliness management"]},
+      {id:3,name:"Typhoid",symptom:["Loss of apetite","Headache","Weight loss"],precaution:["Drink purified water","Avoid junk food"]},
+      {id:4,name:"Jaundice",symptom:["Fatigue","Fever","Weight loss"],precaution:["Avoid contaminated food"]},
+      {id:5,name:"Chickenpox",symptom:["Fatigue","HighFever"],precaution:["Vaccination","Avoid contact with infected person"]},
+      {id:6,name:"Diarrhoea",symptom:["Abdominal pain","Abdominal cramps","Nausea"],precaution:["Avoid contaminated food"]},
+      {id:7,name:"Common Cold",symptom:["Nasal stuffiness or drainage","Sore or scratchy throat "," Sneezing","Hoarseness","Coughing"],precaution:["Use of- hand sanitizers","Use of disinfectants","Use of facial tissues"]},
+      {id:8,name:"Rabies ",symptom:["Severe headache","High fever ","Painful spasm of muscle","Inability to swallow even liquid food"],precaution:["Immnunization of pet dog","Isolation of Rabied Dogs"]},
+      {id:9,name:"Hepatitis",symptom:["Fever","Yellowing of skin","Headache","Joint Pain","Loss of appetite","Irritating rashes"],precaution:["Use of boiled water","Avoid contaminated Food"]},
+      {id:10,name:"Tuberculosis",symptom:["Fever","General weakness","Loss of appetite","Persistent coughing"],precaution:["Isolation of TB patients","Vaccination by BCG"]},
+      {id:11,name:"Cholera",symptom:["Acute Diarrhoea","Vomiting","Muscular cramps","Stool is white"],precaution:["Boiling of drinking water","Avoid contaminated food"]},
 
   	];
   }
