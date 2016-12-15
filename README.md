@@ -5,11 +5,11 @@ This is Mobile App developed for generex competition of Techfest IIT Bombay. It 
 ## Introduction
 
 * App Name - V Care
-* App Id - com.appocrafts.vcare5
-* App Version - 5.0.7
+* App Id - com.appocrafts.vcare
+* App Version - 1.0.1
 * OS supported - Android, iOS, Windows
 * version support - PhoneGap (iOS / Android / Windows) cli-6.3.0 (4.2.0 / 5.2.1 / 4.4.1)
-* Minimum Version supported - Android 2.3
+* Minimum Version supported - Android 4.2
 * download link - https://build.phonegap.com/apps/2390449/share
 
 ## App Feature
