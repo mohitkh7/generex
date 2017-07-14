@@ -33,7 +33,7 @@ This is Mobile App developed for generex competition of Techfest IIT Bombay. It 
   4. SMS plugin - https://github.com/cordova-sms/cordova-sms-plugin   
 
 
-##Terminology
+## Terminology
 
 ### Hybrid App
 Hybrid Apps are those apps which are made using web technologies such as HTML, CSS, JS and are hosted inside a native application that utilizes a mobile platform’s WebView. 
